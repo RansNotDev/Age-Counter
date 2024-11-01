@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Screen Dark Mode</title>
+    <style>
+        body {
+            background-color: #121212; /* Dark background */
+            color: #ffffff; /* Light text color */
+            font-size: 35px; /* Text size */
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+            font-size: 35px; /* Text size for close button */
+        }
+    </style>
+</head>
+<body>
+    <div id="input-container">
+        <input type="date" id="birthday" required>
+        <input type="time" id="birth-time" required>
+        <br>
+        <button id="set-countdown">Set Countdown</button>
+    </div>
+    <div id="output" style="display: none;"></div>
+
+    <!-- Right close button -->
+    <span id="close-button" style="display: none;">X</span>
+
+    <script src="script.js"></script>
+</body>
+</html>
